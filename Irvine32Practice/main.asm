@@ -2,7 +2,7 @@
 ;I will be using the Irvine32 library for this.
 ;This is not running for me because my system is unable to access the irvine32 lib. Not sure why I know that I set it up correctly.
 
-INCLUDE Irvine23.inc
+include Irvine32.inc
 
 .data
 
@@ -28,7 +28,6 @@ add eax, eax				;8x
 add eax, ebx				;8x + y
 
 Equation ENDP
-
 
 main PROC
 
