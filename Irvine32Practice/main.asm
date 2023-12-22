@@ -24,9 +24,14 @@ Equation ENDP
 main PROC
 
 mov edx, OFFSET xValue		;Move the offset of xvalue to the edx register.
-call WriteString			;Display the string that is stored in the edx register.
-call ReadInt				;Read the next integer that the user inputs(This value should be saved to the eax register).
-mov xx, eax					;Store the value of eax to xx.
+call WriteString		;Display the string that is stored in the edx register.
+call ReadInt		;Read the next integer that the user inputs(This value should be saved to the eax register).
+mov xx, eax			;Store the value of eax into xx.
+
+mov edx, OFFSET yValue		;Move the offset of yvalue to the edx register.
+call WriteString		;Display the string that is stored in the edx register.
+call ReadInt		;Read the next integer that the user inputs.
+mov yy, eax		;Store the value of eax into yy.
 
 main ENDP
 END main
