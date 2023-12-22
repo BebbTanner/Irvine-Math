@@ -1,5 +1,6 @@
 ;Mathematical equation that allows user input. The equation that I will be using is: (8x + y).
 ;I will be using the Irvine32 library for this.
+;This is not running for me because my system is unable to access the irvine32 lib. Not sure why I know that I set it up correctly.
 
 INCLUDE Irvine23.inc
 
