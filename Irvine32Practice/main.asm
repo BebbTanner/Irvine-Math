@@ -15,13 +15,18 @@ result SDWORD ?
 
 .code
 
-;This is the equation function, this will 
+;This is the equation function, this will carry out the equation listed above.
 Equation PROC
 
 Equation ENDP
 
 
 main PROC
+
+mov edx, OFFSET xValue		;Move the offset of xvalue to the edx register.
+call WriteString			;Display the string that is stored in the edx register.
+call ReadInt				;Read the next integer that the user inputs(This value should be saved to the eax register).
+mov xx, eax					;Store the value of eax to xx.
 
 main ENDP
 END main
