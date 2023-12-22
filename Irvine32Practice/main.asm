@@ -15,8 +15,16 @@ result SDWORD ?
 
 .code
 
-;This is the equation function, this will carry out the equation listed above.
+;This is the equation function, this will carry out the equation listed one line 1.
 Equation PROC
+;EAX = stored x value
+;EBX = stored y value
+;Final result should be: EAX = (8 * x) + y
+
+add eax, eax				;2x
+add eax, eax				;4x
+add eax, eax				;8x
+add eax, ebx				;8x + y
 
 Equation ENDP
 
